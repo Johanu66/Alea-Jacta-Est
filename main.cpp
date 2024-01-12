@@ -1,8 +1,8 @@
 #include <iostream>
-#include "caesar.h"
+#include "vigenere.h"
 
 int main(){
-  Caesar enc;
+  Vigenere enc("turing");
   enc.read("./plain.txt", PLAIN);
   enc.encode();
   enc.write("./cipher.txt", CIPHER);
