@@ -1,1 +1,1 @@
-build/main.o: main.cpp basic-encrypt.h encrypt.h file-content.h
+build/main.o: main.cpp caesar.h encrypt.h file-content.h
