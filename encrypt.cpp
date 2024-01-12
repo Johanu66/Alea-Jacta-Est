@@ -48,10 +48,6 @@ void Encrypt::write(std::string file, FileContent content) {
     }
 }
 
-void Encrypt::encode() {}
-
-void Encrypt::decode() {}
-
 std::ostream& operator<<(std::ostream& os, const Encrypt& enc){
   os << "Valeur a encrypte: " << enc.plain() << std::endl;
   os << "Valeur a encrypte: " << enc.cipher() << std::endl;

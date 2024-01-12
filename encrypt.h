@@ -11,8 +11,8 @@ class Encrypt{
   public:
     std::string plain() const;
     std::string cipher() const;
-    virtual void encode();
-    virtual void decode();
+    virtual void encode() = 0;
+    virtual void decode() = 0;
     void read(std::string file, FileContent content);
     void write(std::string file, FileContent content);
 };
